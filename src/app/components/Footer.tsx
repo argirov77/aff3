@@ -16,7 +16,7 @@ export default function Footer() {
           >
             Privacy Policy
           </button>
-          <p className="footer-copy">© 2025 Teletron Media. All rights reserved.</p>
+          <p className="footer-copy">© 2025 Kiklamino Limited. All rights reserved.</p>
         </div>
       </footer>
 
@@ -34,9 +34,9 @@ export default function Footer() {
             <p><em>Last revised: June 17, 2025</em></p>
             <ol className="policy-list">
               <li>
-                <strong>Purpose.</strong> This Privacy Policy explains how Teletron Limited (“we”)
+                <strong>Purpose.</strong> This Privacy Policy explains how Kiklamino Limited (“we”)
                 collects, uses, shares, and protects your personal data when you visit
-                <a href="https://teletron.com" target="_blank" rel="noopener noreferrer"> teletron.com</a>.
+                <a href="https://kiklaminoadv.com/" target="_blank" rel="noopener noreferrer"> teletron.com</a>.
               </li>
               <li>
                 <strong>Data We Collect.</strong>
@@ -85,8 +85,8 @@ export default function Footer() {
               </li>
               <li>
                 <strong>Contact.</strong><br/>
-                Email: <a href="mailto:info@teletron.com">info@teletron.com</a><br/>
-                Address: 24 Station Square, Suite 16, Inverness IV1 1LD, Scotland
+                Email: <a href="mailto:main@kiklaminoadv.com">main@kiklaminoadv.com</a><br/>
+                Address: 1 King Street, London, England, EC2V 8AU
               </li>
             </ol>
           </div>

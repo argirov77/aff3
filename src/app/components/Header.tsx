@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <header>
       <div className="header__inner container">
-        <Link href="#hero" className="logo">Teletron Media</Link>
+        <Link href="#hero" className="logo">Kiklamino </Link>
         <nav>
           <ul className="nav-list">
             {NAV.map(item => (

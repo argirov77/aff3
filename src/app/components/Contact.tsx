@@ -11,8 +11,8 @@ export default function Contact() {
         </p>
         <p>
           <strong>Email:</strong>{' '}
-          <a href="mailto:info@teletron.media" className="contact-link">
-            info@teletron.media
+          <a href="mailto:main@kiklaminoadv.com" className="contact-link">
+            main@kiklaminoadv.com
           </a>
           <br />
           <strong>Phone:</strong>{' '}
@@ -21,9 +21,9 @@ export default function Contact() {
           </a>
         </p>
         <p>
-          Teletron Media Ltd.<br />
-          24 Station Square, Suite 16<br />
-          Inverness IV1 1LD, Scotland
+          Kiklamino Limited.<br />
+          1 King Street, London<br />
+           England, EC2V 8AU
         </p>
       </div>
     </section>

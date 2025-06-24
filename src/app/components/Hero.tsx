@@ -8,7 +8,7 @@ export default function Hero() {
         <h1>Eager to Supercharge Your Affiliate Revenue?</h1>
         <p>
           You’ve tested every ad hack in the book—yet your CPA still won’t budge.
-          At Teletron Media, we combine data-driven affiliate partnerships with
+          At Kiklamino Limited, we combine data-driven affiliate partnerships with
           proprietary review sites to finally move the needle on your bottom line.
         </p>
         <div className="hero-cta">

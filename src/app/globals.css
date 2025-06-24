@@ -199,10 +199,10 @@ nav ul {
   );
   pointer-events: none;
 }
-.section--hero     { background-image: url('/images/hero.png'); }
-.section--services { background-image: url('/images/services.jpg'); }
-.section--about    { background-image: url('/images/about-us1.jpg'); }
-.section--contact  { background-image: url('/images/contact.jpg'); }
+.section--hero     { background-image: url('/images/i1.jpg'); }
+.section--services { background-image: url('/images/i2.jpg'); }
+.section--about    { background-image: url('/images/i3.jpg'); }
+.section--contact  { background-image: url('/images/i4.jpg'); }
 
 /* внутренний оверлей-блок (только где нужен) */
 .section-content {
