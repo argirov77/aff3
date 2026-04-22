@@ -14,12 +14,6 @@ const fadeUp: Variants = {
   }),
 }
 
-const proofPoints = [
-  { value: '£4.8M+', label: 'Managed media spend' },
-  { value: '42%', label: 'Average CPA reduction' },
-  { value: '17', label: 'Core verticals covered' },
-]
-
 export default function Hero() {
   return (
     <section id="hero" className="section section--hero hero">
@@ -32,7 +26,7 @@ export default function Hero() {
             custom={0}
             className="eyebrow"
           >
-            Independent performance partner
+            Affiliate marketing, performance-first
           </motion.div>
 
           <motion.h1
@@ -41,7 +35,7 @@ export default function Hero() {
             animate="show"
             custom={1}
           >
-            Affiliate growth that looks <span className="accent">enterprise-ready</span>, not experimental.
+            Eager to <span className="accent">supercharge</span> your affiliate revenue?
           </motion.h1>
 
           <motion.p
@@ -51,8 +45,9 @@ export default function Hero() {
             custom={2}
             className="hero-sub"
           >
-            We build scalable acquisition systems for brands that need predictable CAC, transparent reporting,
-            and serious channel control. No random traffic bundles, no vanity dashboards.
+            You&rsquo;ve tested every ad hack in the book &mdash; yet your CPA still won&rsquo;t budge.
+            At Kiklamino Limited, we combine data-driven affiliate partnerships with proprietary
+            review sites to finally move the needle on your bottom line.
           </motion.p>
 
           <motion.div
@@ -62,11 +57,11 @@ export default function Hero() {
             custom={3}
             className="hero-cta"
           >
-            <Link href="#contact" className="btn btn--primary">
-              Get strategic audit
+            <Link href="#services" className="btn btn--primary">
+              Explore our services
             </Link>
-            <Link href="#services" className="btn btn--ghost">
-              See capabilities
+            <Link href="#contact" className="btn btn--ghost">
+              Request a free guide
             </Link>
           </motion.div>
 
@@ -75,26 +70,11 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={4}
-            className="hero-proof"
-          >
-            {proofPoints.map((item) => (
-              <div key={item.label} className="proof-card">
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </div>
-            ))}
-          </motion.div>
-
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            custom={5}
             className="hero-chips"
           >
-            <span>CPA / CPS programs</span>
-            <span>Weekly executive reporting</span>
-            <span>Fraud-control workflow</span>
+            <span>CPA &amp; CPS partnerships</span>
+            <span>Vetted affiliate network</span>
+            <span>Transparent ROI</span>
           </motion.div>
         </div>
       </div>
