@@ -2,22 +2,28 @@
 
 import { motion } from 'framer-motion'
 
+const checklist = [
+  'Ваш текущий CAC/CPA и целевой диапазон',
+  'Основные гео, офферы и приоритетные сегменты',
+  'Ожидаемый горизонт и желаемый объём scale',
+]
+
 export default function Contact() {
   return (
-    <section id="contact" className="section section--alt">
+    <section id="contact" className="section section--alt section--contact">
       <div className="container">
-        <div className="contact-grid">
-          <motion.div
-            className="contact-head"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
-          >
-            <div className="eyebrow">Get in touch</div>
-            <h2>Let&rsquo;s unlock higher-quality affiliate leads.</h2>
+        <motion.div
+          className="contact-shell"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
+        >
+          <div className="contact-main">
+            <div className="eyebrow">Start partnership</div>
+            <h2>Давайте соберём roadmap роста под ваши KPI.</h2>
             <p>
-              Drop us a line and one of our strategists will respond within 24 hours.
+              Отправьте вводные — вернёмся с планом действий, рисками и приоритетами по запуску в течение 24 часов.
             </p>
 
             <div className="contact-details">
@@ -33,37 +39,33 @@ export default function Contact() {
                   <a href="tel:+441234567890">+44 1234 567890</a>
                 </span>
               </div>
-              <div className="contact-row">
-                <span className="contact-label">Office</span>
-                <address className="contact-value" style={{ fontStyle: 'normal' }}>
-                  Kiklamino Limited<br />
-                  1st Floor 415 High Street, Suite 1038<br />
-                  Stratford, London, E15 4QZ
-                </address>
+            </div>
+          </div>
+
+          <div className="contact-card">
+            <h3>Что отправить в первом письме</h3>
+            <ul className="contact-checklist">
+              {checklist.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+
+            <div className="contact-mini-form" aria-hidden="true">
+              <div>
+                <label>Business email</label>
+                <input value="team@company.com" readOnly />
+              </div>
+              <div>
+                <label>Monthly budget</label>
+                <input value="£50,000+" readOnly />
               </div>
             </div>
-          </motion.div>
 
-          <motion.div
-            className="contact-card"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const, delay: 0.12 }}
-          >
-            <h3>Ready to talk numbers?</h3>
-            <p>
-              Send us your goals and current CPA targets — we&rsquo;ll come back with
-              a tailored plan.
-            </p>
-            <a
-              href="mailto:main@kiklaminoadv.com?subject=Kiklamino%20%E2%80%94%20new%20enquiry"
-              className="btn btn--primary"
-            >
-              Send us an email
+            <a href="mailto:main@kiklaminoadv.com?subject=Kiklamino%20%E2%80%94%20new%20enquiry" className="btn btn--primary">
+              Отправить запрос
             </a>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
