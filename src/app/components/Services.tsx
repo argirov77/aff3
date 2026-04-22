@@ -2,33 +2,39 @@
 
 import { motion } from 'framer-motion'
 import {
-  HiOutlineShare,
+  HiOutlineChartBar,
   HiOutlineMagnifyingGlass,
+  HiOutlineShieldCheck,
   HiOutlineUsers,
-  HiOutlineDevicePhoneMobile,
 } from 'react-icons/hi2'
 
 const services = [
   {
-    icon: <HiOutlineShare />,
-    title: 'Affiliate network',
-    desc: 'A curated partner ecosystem driving performance-based clicks and conversions.',
-  },
-  {
     icon: <HiOutlineMagnifyingGlass />,
-    title: 'Google Ads',
-    desc: 'Scale search and display at razor-sharp ROI — capture users at peak purchase intent.',
+    title: 'Acquisition diagnostics',
+    desc: 'Audit attribution, funnel breakpoints, and partner quality before scaling a single pound.',
   },
   {
     icon: <HiOutlineUsers />,
-    title: 'Meta & social ads',
-    desc: 'High-impact Facebook, Instagram and LinkedIn buys to engage and convert.',
+    title: 'Partner sourcing & onboarding',
+    desc: 'Curated affiliate recruitment with compliance checks, activation playbooks, and launch QA.',
   },
   {
-    icon: <HiOutlineDevicePhoneMobile />,
-    title: 'Emerging platforms',
-    desc: 'TikTok, Snapchat and more — tap tomorrow’s audiences before everyone else.',
+    icon: <HiOutlineChartBar />,
+    title: 'Incremental media scale',
+    desc: 'Performance-led budget expansion across search, social, and owned review inventory.',
   },
+  {
+    icon: <HiOutlineShieldCheck />,
+    title: 'Governance & quality control',
+    desc: 'Fraud screening, creative guardrails, and weekly executive reporting built for finance teams.',
+  },
+]
+
+const process = [
+  'Week 1: Tracking + baseline alignment',
+  'Week 2-3: Partner test waves',
+  'Week 4+: Scale only validated cohorts',
 ]
 
 export default function Services() {
@@ -42,11 +48,11 @@ export default function Services() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         >
-          <div className="eyebrow">What we do</div>
-          <h2>Channels built for measurable outcomes.</h2>
+          <div className="eyebrow">Capabilities</div>
+          <h2>A structured operating model for high-stakes growth.</h2>
           <p>
-            Four focused practices, one performance mandate: every click, lead and
-            conversion is tracked, attributed and optimised for ROI.
+            We operate like an extension of your growth and finance teams: clear targets, transparent logic,
+            and disciplined scaling.
           </p>
         </motion.div>
 
@@ -70,6 +76,20 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          className="process-strip"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const, delay: 0.08 }}
+        >
+          {process.map((item) => (
+            <div key={item} className="process-step">
+              {item}
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   )
