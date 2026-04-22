@@ -1,4 +1,3 @@
-// src/app/components/Footer.tsx
 'use client'
 
 import { useState } from 'react'
@@ -9,14 +8,49 @@ export default function Footer() {
   return (
     <>
       <footer className="footer">
-        <div className="footer-inner">
-          <button
-            className="footer-policy-btn"
-            onClick={() => setIsOpen(true)}
-          >
-            Privacy Policy
-          </button>
-          <p className="footer-copy">© 2025 Kiklamino Limited. All rights reserved.</p>
+        <div className="container">
+          <div className="footer-grid">
+            <div className="footer-brand">
+              <span className="logo">
+                <span className="logo-mark" aria-hidden="true" />
+                <span>Kiklamino</span>
+              </span>
+              <p>
+                Performance-powered affiliate agency specialising in CPA/CPS
+                partnerships and proprietary review platforms.
+              </p>
+            </div>
+
+            <div className="footer-col">
+              <h4>Navigate</h4>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-col">
+              <h4>Office</h4>
+              <address>
+                Kiklamino Limited<br />
+                1st Floor 415 High Street<br />
+                Suite 1038, Stratford<br />
+                London, E15 4QZ
+              </address>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <span>© {new Date().getFullYear()} Kiklamino Limited. All rights reserved.</span>
+            <button
+              className="footer-policy-btn"
+              onClick={() => setIsOpen(true)}
+            >
+              Privacy policy
+            </button>
+          </div>
         </div>
       </footer>
 
@@ -30,28 +64,28 @@ export default function Footer() {
             >
               ×
             </button>
-            <h2>Privacy Policy</h2>
+            <h2>Privacy policy</h2>
             <p><em>Last revised: June 17, 2025</em></p>
             <ol className="policy-list">
               <li>
-                <strong>Purpose.</strong> This Privacy Policy explains how Kiklamino Limited (“we”)
-                collects, uses, shares, and protects your personal data when you visit
-                <a href="https://kiklaminoadv.com/" target="_blank" rel="noopener noreferrer"> teletron.com</a>.
+                <strong>Purpose.</strong> This Privacy Policy explains how Kiklamino Limited (&ldquo;we&rdquo;)
+                collects, uses, shares, and protects your personal data when you visit{' '}
+                <a href="https://kiklaminoadv.com/" target="_blank" rel="noopener noreferrer">kiklaminoadv.com</a>.
               </li>
               <li>
-                <strong>Data We Collect.</strong>
+                <strong>Data we collect.</strong>
                 <ul>
-                  <li><strong>Data You Provide:</strong> name, email, phone, company, message.</li>
-                  <li><strong>Usage Data:</strong> IP address, browser info, pages visited, timestamps.</li>
-                  <li><strong>Cookies & Tracking:</strong> to remember preferences & analyze traffic.</li>
+                  <li><strong>Data you provide:</strong> name, email, phone, company, message.</li>
+                  <li><strong>Usage data:</strong> IP address, browser info, pages visited, timestamps.</li>
+                  <li><strong>Cookies &amp; tracking:</strong> to remember preferences and analyse traffic.</li>
                 </ul>
               </li>
               <li>
-                <strong>How We Use.</strong> To respond to your requests, operate & secure our site,
+                <strong>How we use.</strong> To respond to your requests, operate &amp; secure our site,
                 send marketing (only if you opt in), and comply with legal obligations.
               </li>
               <li>
-                <strong>Sharing Data.</strong> With service providers, business successors,
+                <strong>Sharing data.</strong> With service providers, business successors,
                 or when required by law.
               </li>
               <li>
@@ -59,15 +93,15 @@ export default function Footer() {
                 may break.
               </li>
               <li>
-                <strong>Children’s Privacy.</strong> Not intended for under-18s. If we’ve collected
+                <strong>Children&rsquo;s privacy.</strong> Not intended for under-18s. If we&rsquo;ve collected
                 data from a minor, contact us to remove it.
               </li>
               <li>
-                <strong>Data Retention.</strong> We keep your data only as long as needed for the
+                <strong>Data retention.</strong> We keep your data only as long as needed for the
                 purposes above or as required by law.
               </li>
               <li>
-                <strong>International Transfers.</strong> Data may be processed in the UK, EU, or
+                <strong>International transfers.</strong> Data may be processed in the UK, EU, or
                 other jurisdictions with adequate safeguards.
               </li>
               <li>
@@ -79,92 +113,19 @@ export default function Footer() {
                 you accept changes.
               </li>
               <li>
-                <strong>Your Rights.</strong> EU/UK residents can access, correct, delete, restrict,
+                <strong>Your rights.</strong> EU/UK residents can access, correct, delete, restrict,
                 object, port data or withdraw consent. California/Virginia residents have
                 disclosure, deletion, opt-out and non-discrimination rights.
               </li>
               <li>
                 <strong>Contact.</strong><br/>
                 Email: <a href="mailto:main@kiklaminoadv.com">main@kiklaminoadv.com</a><br/>
-                Address: 1 King Street, London, England, EC2V 8AU
+                Address: 1st Floor 415 High Street, Suite 1038, Stratford, London, E15 4QZ
               </li>
             </ol>
           </div>
         </div>
       )}
-
-      <style jsx>{`
-        /* Footer */
-        .footer {
-          background: #f4f7fa;
-          padding: 1rem 0;
-          text-align: center;
-        }
-        .footer-inner {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.5rem;
-        }
-        .footer-policy-btn {
-          background: none;
-          border: none;
-          color: #00AEEF;
-          text-decoration: underline;
-          font-size: 0.95rem;
-          cursor: pointer;
-        }
-        .footer-copy {
-          font-size: 0.85rem;
-          color: #555;
-        }
-
-        /* Modal */
-        .modal-overlay {
-          position: fixed;
-          inset: 0;
-          background: rgba(0,0,0,0.6);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 2000;
-        }
-        .modal {
-          background: #fff;
-          border-radius: 0.75rem;
-          width: 90%;
-          max-width: 600px;
-          max-height: 75vh;
-          overflow-y: auto;
-          padding: 1.5rem;
-          position: relative;
-          box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-        }
-        .modal-close {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          background: none;
-          border: none;
-          font-size: 1.5rem;
-          cursor: pointer;
-        }
-        .policy-list {
-          font-size: 0.9rem;
-          line-height: 1.4;
-          padding-left: 1.2rem;
-        }
-        .policy-list li + li {
-          margin-top: 0.75rem;
-        }
-        .policy-list ul {
-          margin-top: 0.3rem;
-          padding-left: 1rem;
-        }
-        a {
-          color: #00AEEF;
-        }
-      `}</style>
     </>
   )
 }
