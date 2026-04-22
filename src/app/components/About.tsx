@@ -3,23 +3,10 @@
 import { motion } from 'framer-motion'
 
 const stats = [
-  { value: '91%', unit: '', label: 'Traffic quality pass rate' },
-  { value: '7', unit: 'd', label: 'Average first optimisation loop' },
-  { value: '3.4x', unit: '', label: 'Median partner productivity lift' },
-  { value: '24', unit: 'h', label: 'Strategy response SLA' },
-]
-
-const highlights = [
-  {
-    title: 'Fintech lead-gen',
-    result: 'CPA down 38% in 9 weeks',
-    copy: 'Rebuilt partner mix and excluded low-intent placements using first-party conversion signals.',
-  },
-  {
-    title: 'E-commerce subscriptions',
-    result: 'ROAS up 2.1x QoQ',
-    copy: 'Combined affiliate prospecting with branded search defence to reduce overlap and leakage.',
-  },
+  { value: '100', unit: '%', label: 'Performance-based partnerships' },
+  { value: '24', unit: 'h', label: 'Average strategist response time' },
+  { value: 'CPA', unit: '/CPS', label: 'Native pricing models' },
+  { value: 'ROI', unit: '', label: 'Transparent and measurable' },
 ]
 
 export default function About() {
@@ -34,26 +21,17 @@ export default function About() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
           >
-            <div className="eyebrow">Why teams choose us</div>
-            <h2>Operator-grade execution with boardroom-level clarity.</h2>
+            <div className="eyebrow">About Kiklamino</div>
+            <h2>A performance-powered affiliate agency.</h2>
             <p>
-              Kiklamino Limited supports growth teams that are done with guesswork. We combine a vetted partner
-              base with a strict measurement framework so every scaling decision is financially defensible.
+              Kiklamino Limited specialises in CPA/CPS partnerships. We pair our
+              in-house review platforms with a vetted network of top affiliates to
+              deliver purchase-ready traffic and transparent, measurable ROI.
             </p>
             <p>
-              Our model is built for consistency: less channel volatility, better attribution hygiene, and cleaner
-              executive communication.
+              No guesswork, no vanity metrics — only channels that move your bottom
+              line.
             </p>
-
-            <div className="highlight-grid">
-              {highlights.map((item) => (
-                <div className="highlight-card" key={item.title}>
-                  <p className="highlight-title">{item.title}</p>
-                  <p className="highlight-result">{item.result}</p>
-                  <p>{item.copy}</p>
-                </div>
-              ))}
-            </div>
           </motion.div>
 
           <motion.div
