@@ -35,9 +35,9 @@ export default function Footer() {
               <h4>Office</h4>
               <address>
                 Kiklamino Limited<br />
-                1st Floor 415 High Street<br />
-                Suite 1038, Stratford<br />
-                London, E15 4QZ
+                Suite 7035, 128 Aldersgate Street<br />
+                Barbican, London<br />
+                England, EC1A 4AE
               </address>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Footer() {
               <li>
                 <strong>Contact.</strong><br/>
                 Email: <a href="mailto:main@kiklaminoadv.com">main@kiklaminoadv.com</a><br/>
-                Address: 1st Floor 415 High Street, Suite 1038, Stratford, London, E15 4QZ
+                Address: Suite 7035, 128 Aldersgate Street, Barbican, London, England, EC1A 4AE
               </li>
             </ol>
           </div>

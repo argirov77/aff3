@@ -335,37 +335,6 @@ nav {
   font-size: 0.8rem;
 }
 
-.hero-trust {
-  margin-top: 1rem;
-  display: flex;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.hero-trust > span {
-  font-size: 0.77rem;
-  color: var(--c-subtle);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.hero-trust ul {
-  display: flex;
-  list-style: none;
-  gap: 0.45rem;
-  flex-wrap: wrap;
-}
-
-.hero-trust li {
-  border: 1px solid #355182;
-  border-radius: var(--radius-pill);
-  font-size: 0.8rem;
-  padding: 0.32rem 0.62rem;
-  color: var(--c-ink-soft);
-  background: rgba(15, 24, 44, 0.7);
-}
-
 .hero-visual-main {
   border-radius: var(--radius-xl);
   border: 1px solid #355182;

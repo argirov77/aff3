@@ -20,7 +20,6 @@ const stats = [
   { value: '3.4x', label: 'Median partner efficiency lift' },
 ]
 
-const trustTags = ['Fintech', 'iGaming', 'E-commerce', 'SaaS']
 const commandCenter = [
   { label: 'Partner quality score', value: '94/100' },
   { label: 'Fraud-filtered traffic', value: '99.2%' },
@@ -62,15 +61,6 @@ export default function Hero() {
                   <span>{item.label}</span>
                 </div>
               ))}
-            </motion.div>
-
-            <motion.div variants={fadeUp} initial="hidden" animate="show" custom={5} className="hero-trust">
-              <span>Trusted across:</span>
-              <ul>
-                {trustTags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
             </motion.div>
           </div>
 
